@@ -30,19 +30,6 @@ namespace ConsoleAppDelegate
             }
 
             Console.ReadKey();
-        }
-
-        public delegate void Del(string message);
-
-        // Create a method for a delegate.
-        public static void DelegateMethod(string message)
-        {
-            Console.WriteLine(message);
-        }
-
-        public static void Rueckruffunktion(string text)
-        {
-            Console.WriteLine("Der Rückruf lautet:" + text);
-        }
+        }        
     }
 }
