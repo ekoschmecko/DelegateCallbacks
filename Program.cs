@@ -10,7 +10,7 @@ namespace ConsoleAppDelegate
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("A: Delegate S:Callbacks");
+            Console.WriteLine("A: Delegate S:Callbacks D:Rechenoption");
             ConsoleKey i = Console.ReadKey().Key;
 
             Console.Clear();
@@ -25,11 +25,16 @@ namespace ConsoleAppDelegate
                     CallBacks call = new CallBacks();
                     break;
 
+                case ConsoleKey.D:
+                    Rechenoperation rechenoperation = new Rechenoperation();
+                    rechenoperation.Test();
+                    break;
+
                 default:
                     break;
             }
 
             Console.ReadKey();
-        }        
+        }      
     }
 }
