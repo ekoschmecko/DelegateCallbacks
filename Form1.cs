@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,11 +27,11 @@ namespace WindowsFormsApp21
         {
             Del op;
 
-            if(width >= buttonDock.Size.Width)
+            if(width >= this.Width)
             {
                 op = new Del(FormSmaller);
             }
-            else if(width <= buttonDock.Size.Width)
+            else if(width <= this.Width)
             {
                 op = new Del(FormBigger);
             }
@@ -42,7 +42,7 @@ namespace WindowsFormsApp21
 
             op();
 
-            width = buttonDock.Size.Width;
+            width = this.Width;
         }
 
         private void FormSmaller()
